@@ -44,5 +44,4 @@ bot.on('message', message => {
         console.log("Un mec a utiliser le menu d'aide pour admin")
     }
 });
-    
-bot.login(Aflt.token);
+    client.login(process.env.TOKEN);
