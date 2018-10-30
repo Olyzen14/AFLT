@@ -46,7 +46,7 @@ bot.on('message', message => {
     
        if(message.content === prefix + "invite"){
         var help_embed = new Discord.RichEmbed()
-        .addField("'''Voici mon lien'''")
+        .addField("Voici mon lien")
         .addField("https://discordapp.com/oauth2/authorize?client_id=490606667080138753&scope=bot&permissions=2146958847")
         message.channel.sendMessage(help_embed)
         console.log("Invite")
