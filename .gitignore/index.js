@@ -43,5 +43,14 @@ bot.on('message', message => {
         message.channel.sendMessage(help_embed)
         console.log("Un mec a utiliser le menu d'aide pour admin")
     }
+    
+       if(message.content === prefix + "invite"){
+        var help_embed = new Discord.RichEmbed()
+        .addField("'''Voici mon lien'''")
+        .addField("https://discordapp.com/oauth2/authorize?client_id=490606667080138753&scope=bot&permissions=2146958847")
+        message.channel.sendMessage(help_embed)
+        console.log("Invite")
+    }
+    
 });
     client.login(process.env.TOKEN);
